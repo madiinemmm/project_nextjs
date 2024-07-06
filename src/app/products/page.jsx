@@ -16,11 +16,11 @@ async function Products() {
 
    
   return (
-    <div className='grid grid-cols-3 gap-28 mt-20'>
+    <div   className='grid grid-cols-3 gap-28 mt-20'>
         {products.map((product) => {
-            return <div  className="   card bg-base-100 w-[350px] h-[500px] shadow-2xl">
+            return <div key={product.id}  className="   card bg-base-100 w-[350px] h-[500px] shadow-2xl">
                 
-            <div key={product.id} className="card-body">
+            <div className="card-body">
            
                <h1 className='text-2xl'>{product.title}</h1>
               <h2 className="card-title text-1xl">{product.description}</h2>
