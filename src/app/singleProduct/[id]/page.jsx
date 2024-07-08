@@ -13,6 +13,13 @@ const getData = async (id) => {
   return (
     <div>
         <h3>{product.title}</h3>
+        <h3>{product.description}</h3>
+        <img className='w-[200] h-[200px]' src={product.images} alt="" />
+        <h3>{product.price}</h3>
+        <h3>{product.category}</h3>
+        <h3>{product.rating}</h3>
+        <h3>{product.stock}</h3>
+        <h3>{product.tags}</h3>
     </div>
   )
 }
